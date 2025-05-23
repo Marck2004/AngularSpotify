@@ -11,7 +11,7 @@ export class LoginService {
     const params = new URLSearchParams({
       client_id: '3cee90dbc73a4fe4a22d0985195d5b34',
       response_type: 'token',
-      redirect_uri: 'http://127.0.0.1:4200/callback',
+      redirect_uri: 'https://marck2004.github.io/AngularSpotify/callback',
       scope: 'user-read-private user-read-email'
     });
 
