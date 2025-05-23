@@ -2,5 +2,8 @@ import { navInterface } from "../Interface/navInterface";
 
 export const navConst: navInterface[] = [{
   value: "Home",
-  path: "./"
+  path: "/"
+}, {
+  value: "Artists",
+  path: "/artists"
 }];
