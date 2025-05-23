@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
   constructor(private loginService: LoginService) { }
 
   ngOnInit(): void {
-    this.loginService.loginWithSpotify();
+    this.loginService.login();
   }
 
 }
