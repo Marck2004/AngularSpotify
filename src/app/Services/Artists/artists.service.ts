@@ -11,8 +11,8 @@ export class ArtistsService {
   private uri = `https://api.spotify.com/v1/artists?ids=${artistIds.join()}`;
   constructor(private http: HttpClient) { }
 
-  getArtists(): Observable<ArtistsInteface[]> {
-    return this.http.get<ArtistsInteface[]>(this.uri, {
+  getArtists(): Observable<ArtistsInteface> {
+    return this.http.get<ArtistsInteface>(this.uri, {
       headers:
         { 'Authorization': `Bearer ${JSON.parse(localStorage.getItem('access_token')!)}` }
     });

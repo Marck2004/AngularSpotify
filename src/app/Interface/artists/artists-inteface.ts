@@ -1,5 +1,11 @@
 export interface ArtistsInteface {
-  external_urls: { spotify: string },
+  artists: [
+  artists: Artist
+]
+}
+
+export interface Artist {
+external_urls: { spotify: string },
   followers: {
     href: string,
     total: number

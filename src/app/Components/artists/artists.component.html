@@ -1,1 +1,12 @@
-<p>artists works!</p>
+<div class="grid grid-cols-3 gap-5 w-full justify-center items-center">
+    <mat-card appearance="outlined" *ngFor="let artist of artists" class="w-1/2 m-auto hover:transform hover:scale-105 transition duration-300">
+  <mat-card-header class="justify-center">
+    <mat-card-title>
+      {{ artist.name }}
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <img mat-card-image  [src]="artist.images.at(1)?.url" class="mt-4">
+  </mat-card-content>
+</mat-card>
+</div>
